@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Poppins", sans-serif;
+  }
+}
+.custome-tab-block .tabs-content {
+  @apply text-white text-lg font-medium;
+}
+.custome-tab-block .tabs-content ul li {
+  @apply text-white text-lg font-medium mb-3 flex items-start pl-7 relative;
+}
+.custome-tab-block .tabs-content ul li::before {
+  @apply mr-2.5 absolute w-5 h-5 min-w-5 max-w-5 bg-no-repeat flex left-0 top-1.5;
+  content: " ";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cg clip-path='url(%23clip0_31_17)'%3E%3Cpath d='M9 18C13.9706 18 18 13.9706 18 9C18 4.02944 13.9706 0 9 0C4.02944 0 0 4.02944 0 9C0 13.9706 4.02944 18 9 18Z' fill='%2332BA7C'/%3E%3Cpath d='M6.70032 13.0599L11.3281 17.6877C15.1609 16.6656 18 13.1735 18 9C18 8.91482 18 8.82965 18 8.74448L14.3659 5.39432L6.70032 13.0599Z' fill='%230AA06E'/%3E%3Cpath d='M9.22713 11.0158C9.62461 11.4132 9.62461 12.0946 9.22713 12.4921L8.40379 13.3154C8.00631 13.7129 7.32492 13.7129 6.92744 13.3154L3.32177 9.68138C2.92429 9.2839 2.92429 8.60251 3.32177 8.20504L4.14511 7.38169C4.54259 6.98422 5.22397 6.98422 5.62145 7.38169L9.22713 11.0158Z' fill='white'/%3E%3Cpath d='M12.3785 4.74131C12.776 4.34384 13.4574 4.34384 13.8549 4.74131L14.6782 5.56466C15.0757 5.96213 15.0757 6.64352 14.6782 7.041L8.43217 13.2587C8.0347 13.6561 7.35331 13.6561 6.95583 13.2587L6.13249 12.4353C5.73501 12.0378 5.73501 11.3565 6.13249 10.959L12.3785 4.74131Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_31_17'%3E%3Crect width='18' height='18' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+}
